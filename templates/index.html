@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luvima</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animated"></div>
+
+    <!-- Geometric Shapes -->
+    <div class="geo-shape"></div>
+    <div class="geo-shape"></div>
+    <div class="geo-shape"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-outer"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">LUVIMA</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="{{ url_for('login') }}" class="btn-outline">Login</a>
+                <a href="#" class="btn-primary">Get Started</a>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Design Beyond Imagination</h1>
+                <p class="subtitle">Transform your photos with powerful editing tools. Create stunning visuals with our
+                    advanced
+                    AI-powered image editor</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">Start Creating</a>
+                    <a href="#" class="btn-outline">Watch Demo</a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item fade-up">
+                        <span class="stat-number">10M+</span>
+                        <span class="stat-label">Projects Created</span>
+                    </div>
+                    <div class="stat-item fade-up">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat-item fade-up">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="main-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="card-dots">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="card-title">Creative Dashboard</div>
+                        <div class="card-description">Manage all your design projects with our intuitive interface.
+                            Track progress, collaborate with team members, and bring your vision to life.</div>
+                        <div class="card-progress">
+                            <div class="progress-label">
+                                <span>Image Edited</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-card"></div>
+                    <div class="floating-card"></div>
+                    <div class="floating-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2 class="section-title fade-up">Our Image Editing Services</h2>
+            <p class="section-subtitle fade-up">Professional tools and creative solutions to enhance your visuals</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Precision Editing & Retouching</h3>
+                    <p class="service-description">Enhance every detail of your photos with professional retouching,
+                        color adjustments, and natural-looking enhancements.</p>
+                    <ul class="service-features">
+                        <li>Photo Retouching & Smoothing</li>
+                        <li>Color Correction & Grading</li>
+                        <li>Detail Enhancement & Sharpening</li>
+                        <li>Natural-Looking Adjustments</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3 class="service-title">Background Magic</h3>
+                    <p class="service-description">Remove, replace, or enhance backgrounds for e-commerce, social media,
+                        or creative projects using AI-powered tools.</p>
+                    <ul class="service-features">
+                        <li>AI Background Removal</li>
+                        <li>Custom Scene Replacement</li>
+                        <li>Transparent & Styled Backgrounds</li>
+                        <li>Dynamic Visual Enhancements</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="service-title">Creative Overlays & Effects</h3>
+                    <p class="service-description">Add text, graphics, templates, and artistic effects to make your
+                        images visually captivating.</p>
+                    <ul class="service-features">
+                        <li>Text & Sticker Overlays</li>
+                        <li>Collages & Templates</li>
+                        <li>Sketch, Painting & Cinematic Filters</li>
+                        <li>Custom Artistic Effects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3 class="service-title">Format & Optimization</h3>
+                    <p class="service-description">Deliver images ready for web or print with optimized file sizes and
+                        multiple format options.</p>
+                    <ul class="service-features">
+                        <li>JPEG, PNG, WebP Conversion</li>
+                        <li>High-Quality Optimization</li>
+                        <li>Print & Web Ready Images</li>
+                        <li>Fast & Reliable Export</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">Batch Processing & Automation</h3>
+                    <p class="service-description">Edit multiple images simultaneously, saving time while maintaining
+                        professional quality across all files.</p>
+                    <ul class="service-features">
+                        <li>Bulk Image Editing</li>
+                        <li>Apply Filters & Adjustments in One Click</li>
+                        <li>Automated Enhancements</li>
+                        <li>Time-Saving Workflow</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="service-title">Photo Restoration & Enhancement</h3>
+                    <p class="service-description">Revive old or damaged photos by restoring clarity, fixing
+                        imperfections, and enhancing colors for stunning results.</p>
+                    <ul class="service-features">
+                        <li>Old Photo Restoration</li>
+                        <li>Remove Scratches & Imperfections</li>
+                        <li>Color Revival & Enhancement</li>
+                        <li>High-Quality Output</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+    <div class="tools-container">
+        <div class="tools-showcase">
+            <div class="tools-info fade-left">
+                <h2>Powerful Image Editing Tools</h2>
+                <p>Access a complete set of image editing tools to enhance, retouch, and transform your photos like a professional. From basic adjustments to advanced effects, everything you need is here.</p>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <i class="fas fa-crop"></i>
+                        <h4>Crop & Resize</h4>
+                        <p>Adjust image dimensions and composition with precision</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-adjust"></i>
+                        <h4>Color & Exposure</h4>
+                        <p>Correct brightness, contrast, saturation, and more</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-magic"></i>
+                        <h4>AI Enhancements</h4>
+                        <p>Automatically improve image quality and apply smart effects</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-brush"></i>
+                        <h4>Retouch & Draw</h4>
+                        <p>Paint, remove blemishes, and add creative touches</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-layer-group"></i>
+                        <h4>Layers & Masks</h4>
+                        <p>Work with multiple layers for precise edits</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-save"></i>
+                        <h4>Export & Share</h4>
+                        <p>Save in multiple formats or share directly online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tools-visual fade-right">
+                <div class="central-hub">
+                    <i class="fas fa-image"></i>
+                    <div class="orbit-item" title="Crop"><i class="fas fa-crop"></i></div>
+                    <div class="orbit-item" title="Brush"><i class="fas fa-brush"></i></div>
+                    <div class="orbit-item" title="Adjust"><i class="fas fa-adjust"></i></div>
+                    <div class="orbit-item" title="Layers"><i class="fas fa-layer-group"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+    <div class="section-header">
+        <h2 class="section-title fade-up">Featured Projects</h2>
+        <p class="section-subtitle fade-up">Explore some of our most impressive image editing projects and creative transformations</p>
+    </div>
+    <div class="portfolio-grid">
+        <div class="portfolio-item fade-up">
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Photo Retouching Suite</h3>
+                <p class="portfolio-category">Portrait Editing</p>
+                <p class="portfolio-description">Advanced portrait retouching project enhancing skin, lighting, and facial features for professional-quality results.</p>
+                <div class="portfolio-stats">
+                    <div class="stat">
+                        <span class="stat-value">500+</span>
+                        <span class="stat-text">Edited Photos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">98%</span>
+                        <span class="stat-text">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item fade-up">
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Background Removal Project</h3>
+                <p class="portfolio-category">Product Images</p>
+                <p class="portfolio-description">Removed backgrounds from thousands of product images to create clean, professional visuals for e-commerce platforms.</p>
+                <div class="portfolio-stats">
+                    <div class="stat">
+                        <span class="stat-value">2,000+</span>
+                        <span class="stat-text">Images Edited</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-text">Accuracy Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item fade-up">
+            <div class="portfolio-content">
+                <h3 class="portfolio-title">Creative Compositing</h3>
+                <p class="portfolio-category">Digital Art</p>
+                <p class="portfolio-description">Combined multiple images, applied effects, and created visually stunning compositions for marketing campaigns and social media content.</p>
+                <div class="portfolio-stats">
+                    <div class="stat">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-text">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">95%</span>
+                        <span class="stat-text">Positive Feedback</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2 class="fade-up">Ready to Create Something Amazing?</h2>
+            <p class="fade-up">Join thousands of designers and editors who trust Luvima for their creative editing.
+                Start your journey today and bring your vision to life.</p>
+            <div class="cta-actions fade-up">
+                <a href="#" class="btn-primary">Start Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Luvima</h3>
+                <p>Empowering photographers and creatives with advanced image editing tools, AI enhancements, and professional-grade features to bring every photo to life.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Editing Tools</a></li>
+                    <li><a href="#">Filters & Effects</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">AI Enhancements</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Photo Guides</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">System Status</a></li>
+                    <li><a href="#">Report Issues</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Luvima Image Studio. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Settings</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Custom Cursor System
+        const cursor = document.querySelector('.cursor');
+        const cursorOuter = document.querySelector('.cursor-outer');
+        const cursorTrails = [];
+
+        // Create cursor trails
+        for (let i = 0; i < 5; i++) {
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            document.body.appendChild(trail);
+            cursorTrails.push({
+                element: trail,
+                x: 0,
+                y: 0
+            });
+        }
+
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function updateCursor() {
+            cursorX += (mouseX - cursorX) * 0.15;
+            cursorY += (mouseY - cursorY) * 0.15;
+
+            cursor.style.left = cursorX + 'px';
+            cursor.style.top = cursorY + 'px';
+
+            cursorOuter.style.left = mouseX + 'px';
+            cursorOuter.style.top = mouseY + 'px';
+
+            // Update trails
+            cursorTrails.forEach((trail, index) => {
+                trail.x += (cursorX - trail.x) * (0.1 - index * 0.015);
+                trail.y += (cursorY - trail.y) * (0.1 - index * 0.015);
+
+                trail.element.style.left = trail.x + 'px';
+                trail.element.style.top = trail.y + 'px';
+                trail.element.style.opacity = 1 - (index * 0.15);
+                trail.element.style.transform = `scale(${1 - index * 0.1})`;
+            });
+
+            requestAnimationFrame(updateCursor);
+        }
+
+        updateCursor();
+
+        // Cursor hover effects
+        const interactiveElements = document.querySelectorAll('a, button, .service-card, .tool-item, .portfolio-item');
+
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2)';
+                cursorOuter.style.transform = 'scale(1.5)';
+                cursor.style.background = 'linear-gradient(45deg, #ec4899, #f59e0b)';
+            });
+
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursorOuter.style.transform = 'scale(1)';
+                cursor.style.background = 'linear-gradient(45deg, #8b5cf6, #06b6d4)';
+            });
+        });
+
+        // Parallax Scrolling
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+
+            document.querySelector('.bg-animated').style.transform = `translateY(${rate}px)`;
+
+            document.querySelectorAll('.geo-shape').forEach((shape, index) => {
+                const speed = (index + 1) * 0.3;
+                shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+            });
+        });
+
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Dynamic Background Animation
+        let bgRotation = 0;
+        setInterval(() => {
+            bgRotation += 0.2;
+            document.querySelector('.bg-animated').style.filter =
+                `hue-rotate(${bgRotation}deg) brightness(1.1)`;
+        }, 100);
+
+        // Interactive Card Tilt Effects
+        document.querySelectorAll('.service-card, .portfolio-item').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 8;
+                const rotateY = (centerX - x) / 8;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header Scroll Effect
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > 100) {
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
+                header.style.borderBottom = '1px solid rgba(139, 92, 246, 0.3)';
+            } else {
+                header.style.background = 'rgba(10, 10, 10, 0.8)';
+                header.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+            }
+
+            // Hide/show header on scroll
+            if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollY = currentScrollY;
+        });
+
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        let isMenuOpen = false;
+
+        mobileToggle.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+
+            if (isMenuOpen) {
+                navMenu.style.display = 'flex';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.right = '0';
+                navMenu.style.background = 'rgba(10, 10, 10, 0.95)';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.padding = '40px';
+                navMenu.style.gap = '30px';
+                navMenu.style.backdropFilter = 'blur(20px)';
+                navMenu.style.borderTop = '1px solid rgba(255, 255, 255, 0.1)';
+
+                // Animate hamburger to X
+                const spans = mobileToggle.querySelectorAll('span');
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+            } else {
+                navMenu.style.display = 'none';
+
+                // Reset hamburger
+                const spans = mobileToggle.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Stats Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+
+            counters.forEach(counter => {
+                const target = counter.textContent;
+                const numericValue = parseInt(target.replace(/[^\d]/g, '')) || 0;
+                const suffix = target.replace(/[\d.]/g, '');
+                let current = 0;
+                const increment = numericValue / 100;
+
+                const updateCounter = () => {
+                    if (current < numericValue) {
+                        current += increment;
+                        if (suffix.includes('M')) {
+                            counter.textContent = (current / 1000000).toFixed(1) + 'M+';
+                        } else if (suffix.includes('K')) {
+                            counter.textContent = (current / 1000).toFixed(0) + 'K+';
+                        } else if (suffix.includes('%')) {
+                            counter.textContent = current.toFixed(1) + '%';
+                        } else {
+                            counter.textContent = Math.floor(current) + suffix;
+                        }
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Trigger counter animation when stats come into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsGrid = document.querySelector('.stats-grid');
+        if (statsGrid) {
+            statsObserver.observe(statsGrid);
+        }
+
+        // Floating Animation for Hero Elements
+        function createFloatingAnimation() {
+            const floatingCards = document.querySelectorAll('.floating-card');
+
+            floatingCards.forEach((card, index) => {
+                let yPos = 0;
+                let direction = 1;
+                const speed = 0.02 + (index * 0.01);
+                const amplitude = 15 + (index * 5);
+
+                function animate() {
+                    yPos += direction * speed;
+                    if (yPos > amplitude || yPos < -amplitude) {
+                        direction *= -1;
+                    }
+
+                    card.style.transform = `translateY(${yPos}px) rotate(${yPos * 0.5}deg)`;
+                    requestAnimationFrame(animate);
+                }
+
+                setTimeout(() => animate(), index * 1000);
+            });
+        }
+
+        // Particle System for Background
+        function createParticleSystem() {
+            const particleContainer = document.createElement('div');
+            particleContainer.style.position = 'fixed';
+            particleContainer.style.top = '0';
+            particleContainer.style.left = '0';
+            particleContainer.style.width = '100%';
+            particleContainer.style.height = '100%';
+            particleContainer.style.pointerEvents = 'none';
+            particleContainer.style.zIndex = '-1';
+            document.body.appendChild(particleContainer);
+
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.background = `rgba(${139 + Math.random() * 50}, ${92 + Math.random() * 50}, 246, ${Math.random() * 0.3 + 0.1})`;
+                particle.style.borderRadius = '50%';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+
+                particleContainer.appendChild(particle);
+
+                // Animate particles
+                let x = parseFloat(particle.style.left);
+                let y = parseFloat(particle.style.top);
+                let vx = (Math.random() - 0.5) * 0.5;
+                let vy = (Math.random() - 0.5) * 0.5;
+
+                function moveParticle() {
+                    x += vx;
+                    y += vy;
+
+                    if (x < 0 || x > 100) vx *= -1;
+                    if (y < 0 || y > 100) vy *= -1;
+
+                    particle.style.left = x + '%';
+                    particle.style.top = y + '%';
+
+                    requestAnimationFrame(moveParticle);
+                }
+
+                moveParticle();
+            }
+        }
+
+        // Glitch Effect for Logo
+        function addGlitchEffect() {
+            const logo = document.querySelector('.logo');
+
+            setInterval(() => {
+                if (Math.random() > 0.95) {
+                    logo.style.textShadow = `
+                        2px 0 #ff0000,
+                        -2px 0 #00ffff,
+                        0 2px #ffff00
+                    `;
+                    logo.style.transform = 'skew(0.5deg)';
+
+                    setTimeout(() => {
+                        logo.style.textShadow = 'none';
+                        logo.style.transform = 'none';
+                    }, 100);
+                }
+            }, 3000);
+        }
+
+        // Loading Animation
+        function showLoadingAnimation() {
+            const loader = document.createElement('div');
+            loader.style.position = 'fixed';
+            loader.style.top = '0';
+            loader.style.left = '0';
+            loader.style.width = '100%';
+            loader.style.height = '100%';
+            loader.style.background = 'var(--primary-dark)';
+            loader.style.zIndex = '10000';
+            loader.style.display = 'flex';
+            loader.style.alignItems = 'center';
+            loader.style.justifyContent = 'center';
+            loader.innerHTML = `
+                <div style="
+                    width: 60px;
+                    height: 60px;
+                    border: 3px solid rgba(139, 92, 246, 0.3);
+                    border-top: 3px solid #8b5cf6;
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+                "></div>
+            `;
+
+            const spinStyle = document.createElement('style');
+            spinStyle.textContent = '@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }';
+            document.head.appendChild(spinStyle);
+
+            document.body.appendChild(loader);
+
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+                setTimeout(() => {
+                    document.body.removeChild(loader);
+                    document.head.removeChild(spinStyle);
+                }, 500);
+            }, 1500);
+        }
+
+        // Service Card Hover Effects
+        function enhanceServiceCards() {
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.boxShadow = `
+                        0 25px 50px rgba(139, 92, 246, 0.3),
+                        0 0 0 1px rgba(139, 92, 246, 0.5),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1)
+                    `;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.boxShadow = 'none';
+                });
+            });
+        }
+
+        // Initialize all animations and effects
+        window.addEventListener('load', () => {
+            showLoadingAnimation();
+            createFloatingAnimation();
+            createParticleSystem();
+            addGlitchEffect();
+            enhanceServiceCards();
+
+            // Stagger animation for initial load
+            const elementsToAnimate = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+            elementsToAnimate.forEach((el, index) => {
+                setTimeout(() => {
+                    if (el.getBoundingClientRect().top < window.innerHeight) {
+                        el.classList.add('active');
+                    }
+                }, index * 100);
+            });
+        });
+
+        // Performance optimization for low-end devices
+        if (navigator.hardwareConcurrency <= 2) {
+            document.querySelectorAll('.particle').forEach(particle => {
+                particle.remove();
+            });
+
+            document.querySelector('.bg-animated').style.animation = 'none';
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-nav');
+            }
+        });
+
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('keyboard-nav');
+        });
+
+        // Add focus styles for keyboard navigation
+        const focusStyle = document.createElement('style');
+        focusStyle.textContent = `
+            .keyboard-nav a:focus,
+            .keyboard-nav button:focus,
+            .keyboard-nav .service-card:focus {
+                outline: 2px solid var(--accent-purple);
+                outline-offset: 2px;
+            }
+        `;
+        document.head.appendChild(focusStyle);
+    </script>
+</body>
+
+</html>
